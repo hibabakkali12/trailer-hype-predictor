@@ -1,3 +1,9 @@
+"""
+For each movie in movies_details.csv, searches TMDB for an official YouTube
+trailer. Prioritises trailers marked as official, then falls back to any
+available trailer or teaser. Saves results to movies_with_trailers.csv.
+"""
+
 import requests
 import time
 import pandas as pd

@@ -1,3 +1,11 @@
+"""
+Scores every comment in trailer_comments.csv using TextBlob sentiment analysis.
+Each comment receives a polarity score (-1 = very negative, +1 = very positive).
+Scores are then aggregated per movie to produce avg sentiment, % positive,
+and % negative. Merges with YouTube stats to produce the final dataset:
+movies_with_sentiment.csv.
+"""
+
 import pandas as pd
 from textblob import TextBlob
 import time

@@ -1,3 +1,9 @@
+"""
+Loads the final dataset and produces 6 exploratory charts saved to the charts/ folder:
+revenue distribution, trailer views vs revenue, sentiment vs revenue,
+positive/negative comment breakdown, a correlation heatmap, and a top 15 movies bar chart.
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

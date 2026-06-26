@@ -1,3 +1,9 @@
+"""
+Fetches view count, like count, and comment count for each trailer
+from the YouTube Data API. Requests are batched (50 videos per call)
+to stay within API quota limits. Saves to movies_with_yt_stats.csv.
+"""
+
 import requests
 import time
 import pandas as pd

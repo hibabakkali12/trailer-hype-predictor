@@ -1,3 +1,9 @@
+"""
+Downloads up to 100 top comments per trailer from the YouTube Data API.
+Movies with disabled comments are skipped gracefully. Each comment is saved
+as its own row linked back to the movie. Saves to trailer_comments.csv.
+"""
+
 import requests
 import time
 import pandas as pd

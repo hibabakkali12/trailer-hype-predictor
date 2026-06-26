@@ -1,3 +1,9 @@
+"""
+Queries the TMDB Discover API to collect a list of popular movies
+released in the last two years. Saves movie IDs and titles to movies.json.
+This is the starting point of the pipeline — all other scripts depend on this file.
+"""
+
 import requests
 import json
 import time

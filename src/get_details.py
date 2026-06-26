@@ -1,3 +1,9 @@
+"""
+Takes the movie IDs from movies.json and fetches full details for each one
+from the TMDB API — including box office revenue, budget, runtime, and genres.
+Movies with missing revenue data are filtered out. Saves to movies_details.csv.
+"""
+
 import requests
 import json
 import time
